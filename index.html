@@ -6,35 +6,65 @@
 <title>mrtoomuch300 - Machine Mode</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
+* {
+box-sizing: border-box;
+}
+
 body {
 margin: 0;
 padding: 0;
-background: url('https://i.imgur.com/G9bHo42.png') center center no-repeat fixed;
-background-size: cover;
-color: #e0e0ff;
 font-family: 'Bebas Neue', sans-serif;
-text-align: center;
+color: #f0f0ff;
+background: url('https://i.imgur.com/G9bHo42.png') center center fixed;
+background-size: cover;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
 align-items: center;
+text-align: center;
 backdrop-filter: brightness(0.85) blur(2px);
 }
 
 header {
 margin-top: 40px;
-background-color: rgba(0, 0, 0, 0.6);
 padding: 20px;
+background-color: rgba(0, 0, 0, 0.7);
 border-radius: 10px;
+box-shadow: 0 0 20px #5522cc;
+animation: floatHeader 5s ease-in-out infinite;
+}
+
+@keyframes floatHeader {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-5px); }
 }
 
 h1 {
 font-family: 'Anton', sans-serif;
 font-size: 4rem;
-margin: 10px;
-color: #9ab0ff;
-text-shadow: 3px 3px 5px #000;
+color: #90b8ff;
+text-shadow: 3px 3px 8px #000;
 letter-spacing: 4px;
+margin: 0;
+}
+
+.live-banner {
+font-size: 1.2rem;
+color: #ff2f4e;
+background-color: black;
+padding: 6px 16px;
+border: 2px solid #ff2f4e;
+border-radius: 8px;
+margin-top: 10px;
+animation: pulse 1.4s infinite;
+display: inline-block;
+letter-spacing: 1px;
+}
+
+@keyframes pulse {
+0% { box-shadow: 0 0 10px #ff2f4e; }
+50% { box-shadow: 0 0 20px #ff2f4e; }
+100% { box-shadow: 0 0 10px #ff2f4e; }
 }
 
 nav {
@@ -90,6 +120,7 @@ text-shadow: 1px 1px #000;
 <body>
 <header>
 <h1>mrtoomuch300</h1>
+<div class="live-banner">⚡ LIVE NOW ⚡</div>
 <nav>
 <a href="https://twitch.tv/mrtoomuch300" target="_blank">Twitch</a>
 <a href="https://youtube.com/mrtoomuch300" target="_blank">YouTube</a>
