@@ -9,7 +9,8 @@
 body {
 margin: 0;
 padding: 0;
-background: linear-gradient(135deg, #0f0f3f, #2a1d55, #462266);
+background: url('https://i.imgur.com/G9bHo42.png') center center no-repeat fixed;
+background-size: cover;
 color: #e0e0ff;
 font-family: 'Bebas Neue', sans-serif;
 text-align: center;
@@ -17,10 +18,14 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 align-items: center;
+backdrop-filter: brightness(0.85) blur(2px);
 }
 
 header {
 margin-top: 40px;
+background-color: rgba(0, 0, 0, 0.6);
+padding: 20px;
+border-radius: 10px;
 }
 
 h1 {
@@ -30,12 +35,6 @@ margin: 10px;
 color: #9ab0ff;
 text-shadow: 3px 3px 5px #000;
 letter-spacing: 4px;
-}
-
-.jolly-roger {
-width: 160px;
-margin: 25px auto;
-filter: drop-shadow(0 0 10px #d9dfff);
 }
 
 nav {
@@ -59,7 +58,7 @@ text-shadow: 0 0 10px #9b9bff;
 
 .schedule {
 margin-top: 40px;
-background: rgba(0, 0, 50, 0.5);
+background: rgba(0, 0, 50, 0.6);
 padding: 20px 30px;
 border-radius: 10px;
 box-shadow: 0 0 15px #705fff;
@@ -91,7 +90,6 @@ text-shadow: 1px 1px #000;
 <body>
 <header>
 <h1>mrtoomuch300</h1>
-<img class="jolly-roger" src="JollyRoger.png" alt="Straw Hat Pirates Jolly Roger" />
 <nav>
 <a href="https://twitch.tv/mrtoomuch300" target="_blank">Twitch</a>
 <a href="https://youtube.com/mrtoomuch300" target="_blank">YouTube</a>
